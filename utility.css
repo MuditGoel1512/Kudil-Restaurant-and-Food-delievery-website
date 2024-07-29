@@ -1,0 +1,41 @@
+.flex{
+    display: flex;  
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-end{
+    justify-content: end;
+}
+.items-center{
+    align-items: center;
+}
+.align-right{
+    text-align: right;
+}
+.pointer{
+    cursor: pointer;
+}
+.pinyon-script-regular {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.history-line {
+    width: 3em;
+    height: 1.5px;
+    background-color: #b7b7b7;
+}
