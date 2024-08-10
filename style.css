@@ -3,12 +3,13 @@
     padding: 0;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 nav{
     background-color: black;
     color: white;
-    padding: 1.3em 10em;
+    padding: 1.7em 10em;
 }
 .logo{
     height: 2em;
@@ -19,8 +20,25 @@ nav ul{
 nav ul li{
     list-style: none;
 }
+nav ul li a, .book-table a{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 1.09rem;
+    transition: 0.4s ease-in;
+}
+nav ul li a:hover, .book-table a:hover{
+    color: #c59d5f;
+}
 .media-logo{
     gap: 2rem;
+    transition: 0.4s ease-in;
+}
+.media-logo div svg{
+    transition: 0.4s ease-in;
+}
+.media-logo div svg:hover{
+    fill: #c59d5f;
 }
 .history{
     margin: 6em 8em;
@@ -150,9 +168,9 @@ nav ul li{
     flex-direction: column;
     gap: 2em;
     justify-content: start;
-    height: 14em;
-    width: 19em;
-    border: 1px solid #222222;
+    height: 15em;
+    width: 21em;
+    border: 1px solid #c1c1c1;
     margin: 1em;
     padding: 3em 2em;
     transition: 0.4s linear;
@@ -165,33 +183,64 @@ nav ul li{
     font-size: large;
 }
 .food-detail p{
-    color: #b7b7b7;
+    color: #626262;
+    line-height: 2.5rem;
 }
 .coupon{
     margin: 5em 0em;
-}
-.coupon img{
+    background-image: url("https://dtkudil.wpenginepowered.com/wp-content/uploads/2021/08/parallax-img-1.jpg?id=13906");
     height: 75vh;
     width: 100vw;
-    object-fit: cover;
 }
-
+.coupon-text{
+    gap: 2rem;
+    height: 75vh;
+}
+.coupon-text div:nth-child(1){
+    color: #c59d5f;
+    font-size: 3.5rem;
+}
+.coupon-text div:nth-child(2){
+    width: 80vw;
+    border: 7px dashed #c59d5f;
+    padding: 3px 0px;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+.coupon-text div:nth-child(3){
+    color: white;
+    font-size: 1.5rem;
+}
+.coupon-text div:nth-child(4){
+    color: #c59d5f;
+    font-size: 3.8rem;
+}
 .food-varieties{
     margin: 4em 4em 1em 4em ;
 }
 .food-variety{
-    width: 20em;
+    width: 22em;
     margin: 2em;
     line-height: 1.9em;
     gap: 2.5em;
+    transition: 0.3s ease;
+}
+.food-variety:hover{
+    color: #c59d5f;
+    transform: translate(0px, -10px);
 }
 .food-variety span{
     font-weight: 500;
-    font-size: large;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in-out;
+}
+.food-variety span:hover{
+    color: #c59d5f;
 }
 .food-variety p{
-    color: #222222;
-    font-size: 0.9em;
+    color: #7d7d7d;
+    font-size: 1.1rem;
 }
 .menus{
     width: 100vw;
@@ -215,9 +264,38 @@ nav ul li{
 .menu-images img{
     width: 21.5vw;
     height: 29vh;
+    transition: 0.1s ease;
 }   
+.menu-images img:hover{
+    /* background: #c59d5f; */
+    opacity: 0.1;
+}
+.menu-images div{
+    position: relative;
+}
+.menu-images div:hover{
+    background: #c59d5f;
+}
+.menu-images div:hover i{
+    display: block;
+}
 .members div:nth-child(1){
     margin: 1em;
+}
+.menu-images i{
+    color: white;
+    font-weight: 100;
+    font-size: 11em;
+    position: absolute;
+    right: 40%;
+    top: 15%;
+    transition: 0.2s ease-in;
+    display: none;
+    /* transform: rotate(90deg); */
+}
+.menu-images i:hover{
+    transform: rotate(90deg);
+    color: black;
 }
 .members h2{
     font-weight: 700;
@@ -228,12 +306,24 @@ nav ul li{
     margin: 5em 0em;
 }
 .improve-img{
-    margin: 5em 0em;
-}
-.improve-img img{
+    background-image: url("images/parallax-img-3.jpg");
     height: 53vh;
     width: 100vw;
     object-fit: cover;
+    margin: 5em 0em;
+}
+.improve-img-details{
+    height: 53vh;
+    gap: 1.5rem;
+}
+.improve-img-details div:nth-child(1){
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.improve-img-details div:nth-child(2){
+    color: #c59d5f;
+    font-size: 4rem;
 }
 .posts{
     gap: 1.3em;
@@ -244,6 +334,7 @@ nav ul li{
     gap: 1.7em;
     padding-bottom: 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s ease-in;
 }
 .post-img{
     height: 23em;
@@ -266,8 +357,12 @@ nav ul li{
     color: #b7b7b7;
 }
 .food-head{
-    font-size: 1.4em;
-    font-weight: 500;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+    font-weight: 550;
+}
+.post:hover .food-head{
+    color: #c59d5f;
 }
 .post-content{
     padding: 0px 2em;
@@ -313,7 +408,6 @@ nav ul li{
     position: absolute;
     right: 30px;
     top: 20px;
-    cursor: pointer;
 }
 .footer-content{
     width: 65vw;
@@ -353,7 +447,27 @@ nav ul li{
     text-align: center;
     padding: 2rem;
 }
-
+#toTop{
+    background: url("images/totop-after.webp") center center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 30%;
+    border: 3px solid #000;
+    border-radius: 50%;
+    bottom: 10px;
+    display: none;
+    height: 60px;
+    margin: auto;
+    overflow: hidden;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 100%;
+    text-indent: -9999px;
+    width: 60px;
+    z-index: 999;
+}
 
 
 
@@ -409,8 +523,44 @@ nav ul li{
     transition-duration: 0.8s;
 }
 
-.advert-img img{
-    height: 50vh;
+.advert-img{
+    background-image: url("https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/04/three-img-parallax.png?id=8959");
+    height: 55vh;
     width: 100vw;
 }
-
+.advert-img div:nth-child(1){
+    color: white;
+    font-size: 4.2rem;
+    font-weight: 550;
+}
+/* .advert-img div:nth-child(2){
+    color: #c59d5f;
+    font-size: 4rem;
+    transition: 0.4s ease-in-out;
+} */
+.advert-img div:nth-child(2):hover{
+    color: white;
+    /* text-decoration: line-through #c59d5f 3px; */
+}
+.line-effect{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #c59d5f;
+    font-size: 4rem;
+    transition: 0.4s ease-in-out;
+}
+.line-effect::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 3px;
+    color: #c59d5f;
+    transition: width 0.3s ease-in-out;
+}
+.line-effect:hover::after{
+    width: 100%;
+    transition: 0;
+}

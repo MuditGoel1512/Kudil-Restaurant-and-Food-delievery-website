@@ -1,3 +1,5 @@
+let top = document.getElementById('toTop');
+
 document.addEventListener('DOMContentLoaded', (event) => {
   const slides = document.querySelectorAll('.slide');
   const navButtons = document.querySelectorAll('.carousel-nav button');
@@ -53,3 +55,12 @@ function initMap() {
         });
     }
 }
+
+
+// To achieve smooth scrolling to the up arrw key
+top.addEventListener("click", (event) => {
+    event.preventDefault();
+    top.scrollIntoView({behavior: 'smooth'});
+});
+
+
