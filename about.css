@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 1.7em 10em;
+}
+.logo{
+    height: 2em;
+}
+nav ul{
+    gap: 2em;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a, .book-table a{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 1.09rem;
+    transition: 0.4s ease-in;
+}
+.about-us{
+    color: #c59d5f;
+}
+nav ul li a:hover, .book-table a:hover{
+    color: #c59d5f;
+}
+.media-logo{
+    gap: 2rem;
+    transition: 0.4s ease-in;
+}
+.media-logo div svg{
+    transition: 0.4s ease-in;
+}
+.media-logo div svg:hover{
+    fill: #c59d5f;
+}
+.about-image{
+    height: 35vh;
+    width: 100vw;
+    /* background-image: url("images/breadcrumb-img.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/breadcrumb-img.jpg");
+    background-size: cover;
+    /* background-color: black; */
+    /* filter: brightness(0.3); */
+    background-color: rgba(0,0,0,0.5);
+}
+.about-image{
+    color: white;
+    text-align: center;
+    opacity: 1;
+    gap: 0.8rem;
+}
+.about-image div:nth-child(1){
+    font-size: 2rem;
+    font-weight: 600;
+}
+.about-image ul{
+    gap: 1rem;
+}
+.about-image ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+.about-image ul li:nth-child(3){
+    color: #c59d5f;
+}
+.introduction{
+    margin: auto;
+    width: 80vw;
+}
+.intro-head{
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+.intro-head div:nth-child(1){
+    font-size: 2.2rem;
+    font-weight: 750;
+}
+.intro-detail{
+    gap: 2.5rem;
+    padding: 0rem 5rem;
+}
+.intro-detail p{
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #525252;
+}
+.founder{
+    gap: 0.7rem;
+}
+.founder div:nth-child(1){
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+.founder div:nth-child(2){
+    font-size: 1rem;
+    font-weight: 550;
+    color: #c59d5f;
+}
+.intro-images{
+    margin: 4rem 0rem;
+}
+.intro-images img{
+    width: 39vw;
+    transition: opacity 0.4s ease-in;
+}
+.recipes-timeline{
+    background-color: black;
+    color: white;
+    padding: 7rem 0rem;
+    /* height: 200vh; */
+    
+}
+.begin-button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.9rem 2.4rem;
+    transition: 0.5s ease;
+    border: 2px solid #c59d5f;
+}
+.begin-button:hover{
+    background-color: #c59d5f;
+}
+.recipes{
+    width: 80vw;
+    margin: auto;
+    transition: 0.4s ease-in;
+}
+.vertical-line{
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    bottom: 0;
+    left: 50%;
+    width: 2px; 
+    background-color: #c59d5f; 
+    transform: translateX(-50%);
+}
+.first{
+    /* gap: 5rem; */
+}
+.first-recipe{
+    width: 100%;
+    gap: 3rem;
+    transition: 0.4s ease-in;
+    padding: 2.5rem 0rem;
+}
+.first-recipe:hover .first-detail div:nth-child(1){
+    color: #c59d5f;
+}
+.first-detail{
+    width: 45%;
+    /* padding-right: 4rem;
+    padding-left: 3.7rem; */
+    text-align: end;
+    gap: 1.3rem;
+}
+.first-detail div:nth-child(1){
+    font-size: 1.8rem;
+    transition: 0.3s ease-in;
+}
+.first-detail div:nth-child(2){
+    color: #c59d5f;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.first-detail p{
+    width: 76%;
+    padding: 2rem 0rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 550;
+    color: rgb(215, 215, 215);
+}
+.first-image{
+    transition: background 0.3s ease;
+    width: 38rem;
+    height: 23.5rem;
+    background-size: cover;
+    background: url("images/timeline-img1.jpg");
+}
+.second-image{
+    transition: background 0.3s ease;
+    width: 38rem;
+    height: 23.5rem;
+    background-size: cover;
+    background: url("images/img-flip-3.jpg");
+}
+.third-image{
+    transition: background 0.3s ease;
+    width: 38rem;
+    height: 23.5rem;
+    background-size: cover;
+    background: url("images/timeline-img3.jpg");
+}
+.fourth-image{
+    transition: background 0.3s ease;
+    width: 38rem;
+    height: 23.5rem;
+    background-size: cover;
+    background: url("images/img-flip-4.jpg");
+}
+.first-image div,.second-image div,.third-image div,.fourth-image div{
+    text-align: center;
+    color: #c59d5f;
+    /* display: none; */
+    visibility: hidden;
+    transition: letter-spacing 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    font-size: 1.3rem;
+    letter-spacing: 1rem;
+    font-weight: 550;
+}
+
+.rewards-section{
+    margin: 7rem 0rem;
+}
+.history-content-1{
+    gap: 0.5em;
+}
+.history-content-1 h1{
+    font-weight: 750;
+    font-size: 2.3em;
+}
+.rewards{
+    width: 80vw;
+    margin: 5rem auto;
+    /* filter: grayscale(100%); */
+}
+.reward img{
+    filter: grayscale(100%);
+}
+.reward img:hover{
+    filter: grayscale(0%);
+}
+.advert-img{
+    background-image: url("images/about-parallax.jpg");
+    height: 55vh;
+    width: 100vw;
+    margin: 4rem 0rem;
+}
+.advert-img div:nth-child(1){
+    color: white;
+    font-size: 4.2rem;
+    font-weight: 550;
+}
+.advert-img div:nth-child(2){
+    margin-top: 2rem;
+    color: #c59d5f;
+    font-size: 4rem;
+    transition: 0.4s ease-in-out;
+}
+#map{
+    width: 100vw;
+    height: 70vh;
+}
+.footer{
+    background-color: #131212;
+    color: white;
+}
+.footer-bar{
+    width: 80vw;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 1.3em;
+    border-bottom: 1px solid #8c8c8c;
+}
+.email{
+    position: relative;
+}
+.email input{
+    color: #b7b7b7;
+    outline: none;
+    background-color: #131212;
+    padding: 1rem;
+    border: 2px solid #222222;
+    font-size: 1rem;
+    width: 23vw;
+}
+.email i{
+    color: #8c8c8c;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.footer-content{
+    width: 65vw;
+    margin: 7rem auto 4rem auto;
+}
+.address, .timings, .contact-us{
+    text-align: center;
+    line-height: 3rem;
+}
+.address-head, .contact-head{
+    font-size: 1.5rem;
+}
+.address-name div, .email-eg div{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    color: #8c8c8c;
+}
+.email-eg{
+    font-size: 1.1rem;
+}
+.timing-head{
+    color: #c59d5f;
+    font-size: 2.4rem;
+}
+.timings hr{
+    border: 1px solid #222222;
+}
+.day{
+    color: #c59d5f;
+}
+.time{
+    line-height: 2.5rem;
+}
+.rights{
+    background-color: black;
+    color: #8c8c8c;
+    text-align: center;
+    padding: 2rem;
+}
+#toTop{
+    background: url("images/totop-after.webp") center center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 30%;
+    border: 3px solid #000;
+    border-radius: 50%;
+    bottom: 10px;
+    display: none;
+    height: 60px;
+    margin: auto;
+    overflow: hidden;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 100%;
+    text-indent: -9999px;
+    width: 60px;
+    z-index: 999;
+}

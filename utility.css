@@ -23,8 +23,17 @@
 .items-center{
     align-items: center;
 }
+.items-end{
+    align-items: end;
+}
 .align-right{
     text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.align-left{
+    text-align: left;
 }
 .pointer{
     cursor: pointer;
@@ -35,7 +44,13 @@
     font-style: normal;
 }
 .history-line {
-    width: 3em;
+    width: 4rem;
     height: 1.5px;
     background-color: #b7b7b7;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
 }
